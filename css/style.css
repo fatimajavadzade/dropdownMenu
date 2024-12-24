@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 940px;
+    margin: auto;
+}
+
+h1{
+    color: #991e14;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.first,.second,.third{
+    background-color: #bf3729;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    p{
+        color: #fff;
+    }
+}
+
+i{
+    color: #fff;
+    transition: .3s;
+}
+
+menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+menu li {
+    background: #d6d6d6;
+    padding: 10px;
+    margin: 1px 0;
+    transition: .3s;
+
+    a {
+        color: #9a9a9b;
+    }
+}
+
+menu li:hover{
+    background: #a3a1a1;
+    a{
+        color: #f8f8f8c3;
+    }
+}
+
+input {
+    display: none;
+}
+
+#inp1:checked~label .firstMenu {
+    max-height: 500px;
+}
+
+#inp1:checked~label .first i {
+    rotate: 180deg;
+}
+
+#inp2:checked~label .secondMenu {
+    max-height: 500px;
+}
+
+#inp2:checked~label .second i {
+    rotate: 180deg;
+}
+
+#inp3:checked~label .thirdMenu {
+    max-height: 500px;
+}
+
+#inp3:checked~label .third i {
+    rotate: 180deg;
+}
